@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.lego.myapplication.ColorNumberFragment"
-        android:label="ColorNumberFragment" >
+        android:label="ColorNumberFragment">
         <action
             android:id="@+id/action_colorNumberFragment_to_colorNumberFragment2"
             app:destination="@id/homeFragment2"
@@ -18,22 +18,36 @@
             android:name="color"
             android:defaultValue="#D50000"
             app:argType="string" />
+        <argument
+            android:name="amount"
+            android:defaultValue="0"
+            app:argType="integer" />
 
     </fragment>
 
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.example.lego.myapplication.ColorNumberFragment"
-        android:label="ColorNumberFragment" />
+        android:label="ColorNumberFragment">
+        <argument
+            android:name="amount"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
     <fragment
         android:id="@+id/dashboardFragment"
         android:name="com.example.lego.myapplication.ColorNumberFragment"
         android:label="fragment_color_number"
-        tools:layout="@layout/fragment_color_number" >
+        tools:layout="@layout/fragment_color_number">
         <argument
             android:name="color"
             android:defaultValue="#304FFE"
             app:argType="string" />
+        <argument
+            android:name="amount"
+            android:defaultValue="1"
+            app:argType="integer" />
         <action
             android:id="@+id/action_dashboardFragment_to_colorNumberFragment5"
             app:destination="@id/dashboardFragment2"
@@ -44,11 +58,15 @@
         android:id="@+id/notificationrFragment"
         android:name="com.example.lego.myapplication.ColorNumberFragment"
         android:label="fragment_color_number"
-        tools:layout="@layout/fragment_color_number" >
+        tools:layout="@layout/fragment_color_number">
         <argument
             android:name="color"
             android:defaultValue="#64DD17"
             app:argType="string" />
+        <argument
+            android:name="amount"
+            android:defaultValue="2"
+            app:argType="integer" />
         <action
             android:id="@+id/action_notificationrFragment_to_colorNumberFragment6"
             app:destination="@id/notificationrFragment2"
@@ -64,6 +82,15 @@
         android:id="@+id/notificationrFragment2"
         android:name="com.example.lego.myapplication.ColorNumberFragment"
         android:label="fragment_color_number"
-        tools:layout="@layout/fragment_color_number" />
+        tools:layout="@layout/fragment_color_number">
+        <argument
+            android:name="color"
+            android:defaultValue="#DD2600"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            android:defaultValue="2"
+            app:argType="integer" />
+    </fragment>
 
 </navigation>
