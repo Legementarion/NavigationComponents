@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:label="ColorNumberFragment" >
+        <action
+            android:id="@+id/action_colorNumberFragment_to_colorNumberFragment2"
+            app:destination="@id/homeFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="color"
+            android:defaultValue="#D50000"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:label="ColorNumberFragment" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:label="fragment_color_number"
+        tools:layout="@layout/fragment_color_number" >
+        <argument
+            android:name="color"
+            android:defaultValue="#304FFE"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_colorNumberFragment5"
+            app:destination="@id/dashboardFragment2"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationrFragment"
+        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:label="fragment_color_number"
+        tools:layout="@layout/fragment_color_number" >
+        <argument
+            android:name="color"
+            android:defaultValue="#64DD17"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_notificationrFragment_to_colorNumberFragment6"
+            app:destination="@id/notificationrFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment2"
+        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:label="fragment_color_number"
+        tools:layout="@layout/fragment_color_number" />
+    <fragment
+        android:id="@+id/notificationrFragment2"
+        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:label="fragment_color_number"
+        tools:layout="@layout/fragment_color_number" />
+
+</navigation>
