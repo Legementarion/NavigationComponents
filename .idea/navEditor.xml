@@ -13,13 +13,23 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="9" />
-                            <option name="y" value="306" />
+                            <option name="x" value="1003" />
+                            <option name="y" value="-160" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_dashboardFragment_to_colorNumberFragment5">
+                            <entry key="actionDashboardFragmentToDashboardFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionDashboardFragmentToHomeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionDashboardFragmentToNotificationFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -34,9 +44,28 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="273" />
-                            <option name="y" value="309" />
+                            <option name="x" value="508" />
+                            <option name="y" value="-114" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="actionDashboardFragment2ToDashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionDashboardFragment2ToHomeFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionDashboardFragment2ToNotificationFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -46,13 +75,23 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="529" />
+                            <option name="y" value="530" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_colorNumberFragment_to_colorNumberFragment2">
+                            <entry key="actionHomeFragmentToDashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionHomeFragmentToHomeFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionHomeFragmentToNotificationFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -67,25 +106,23 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="265" />
-                            <option name="y" value="12" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="notificationrFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="15" />
-                            <option name="y" value="620" />
+                            <option name="x" value="-31" />
+                            <option name="y" value="519" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_notificationrFragment_to_colorNumberFragment6">
+                            <entry key="actionHomeFragment2ToDashboardFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionHomeFragment2ToHomeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionHomeFragment2ToNotificationFragment2">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -95,14 +132,64 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="notificationrFragment2">
+                  <entry key="notificationFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="271" />
-                            <option name="y" value="622" />
+                            <option name="x" value="993" />
+                            <option name="y" value="574" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="actionNotificationFragmentToDashboardFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionNotificationFragmentToHomeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionNotificationFragmentToNotificationFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="notificationFragment2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-45" />
+                            <option name="y" value="-118" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="actionNotificationFragment2ToDashboardFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionNotificationFragment2ToHomeFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="actionNotificationFragment2ToNotificationFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

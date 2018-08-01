@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                finalHost.navController.navigate(R.id.notificationrFragment)
+                finalHost.navController.navigate(R.id.notificationFragment)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -39,14 +39,14 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.my_nav_host_fragment, finalHost)
                 .commit()
 
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        navigationBar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
     override fun onStart() {
         super.onStart()
         finalHost.navController.addOnNavigatedListener{ navController: NavController, navDestination: NavDestination ->
-            val tab = navDestination.defaultArguments.getInt(ARG_PARAM_AMOUNT)
-            navigation.menu.getItem(tab).isChecked = true
+            val tab = navDestination.defaultArguments.getInt(ARG_PARAM_TAB)
+            navigationBar.menu.getItem(tab).isChecked = true
         }
     }
 }

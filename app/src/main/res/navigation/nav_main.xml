@@ -7,11 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:name="com.example.lego.myapplication.HomeFragment"
         android:label="ColorNumberFragment">
         <action
-            android:id="@+id/action_colorNumberFragment_to_colorNumberFragment2"
+            android:id="@+id/actionHomeFragmentToHomeFragment2"
             app:destination="@id/homeFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/homeFragment" />
+        <action
+            android:id="@+id/actionHomeFragmentToDashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionHomeFragmentToNotificationFragment"
+            app:destination="@id/notificationFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_pop_exit_anim" />
         <argument
@@ -22,24 +33,66 @@
             android:name="amount"
             android:defaultValue="0"
             app:argType="integer" />
+        <argument
+            android:name="tab"
+            android:defaultValue="0"
+            app:argType="integer" />
 
     </fragment>
 
     <fragment
         android:id="@+id/homeFragment2"
-        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:name="com.example.lego.myapplication.HomeFragment2"
         android:label="ColorNumberFragment">
+        <action
+            android:id="@+id/actionHomeFragment2ToDashboardFragment2"
+            app:destination="@id/dashboardFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionHomeFragment2ToHomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionHomeFragment2ToNotificationFragment2"
+            app:destination="@id/notificationFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
         <argument
             android:name="amount"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="color"
+            android:defaultValue="#C51162"
+            app:argType="string" />
+        <argument
+            android:name="tab"
             android:defaultValue="0"
             app:argType="integer" />
     </fragment>
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:name="com.example.lego.myapplication.DashBoardFragment"
         android:label="fragment_color_number"
-        tools:layout="@layout/fragment_color_number">
+        tools:layout="@layout/fragment">
+        <action
+            android:id="@+id/actionDashboardFragmentToHomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/actionDashboardFragmentToDashboardFragment2"
+            app:destination="@id/dashboardFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionDashboardFragmentToNotificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
         <argument
             android:name="color"
             android:defaultValue="#304FFE"
@@ -48,17 +101,32 @@
             android:name="amount"
             android:defaultValue="1"
             app:argType="integer" />
-        <action
-            android:id="@+id/action_dashboardFragment_to_colorNumberFragment5"
-            app:destination="@id/dashboardFragment2"
-            app:enterAnim="@anim/nav_default_pop_enter_anim"
-            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="tab"
+            android:defaultValue="1"
+            app:argType="integer" />
     </fragment>
+
     <fragment
-        android:id="@+id/notificationrFragment"
-        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:id="@+id/notificationFragment"
+        android:name="com.example.lego.myapplication.NotificationFragment"
         android:label="fragment_color_number"
-        tools:layout="@layout/fragment_color_number">
+        tools:layout="@layout/fragment">
+        <action
+            android:id="@+id/actionNotificationFragmentToHomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/actionNotificationFragmentToDashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionNotificationFragmentToNotificationFragment2"
+            app:destination="@id/notificationFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
         <argument
             android:name="color"
             android:defaultValue="#64DD17"
@@ -67,28 +135,77 @@
             android:name="amount"
             android:defaultValue="2"
             app:argType="integer" />
-        <action
-            android:id="@+id/action_notificationrFragment_to_colorNumberFragment6"
-            app:destination="@id/notificationrFragment2"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+        <argument
+            android:name="tab"
+            android:defaultValue="2"
+            app:argType="integer" />
     </fragment>
+
     <fragment
         android:id="@+id/dashboardFragment2"
-        android:name="com.example.lego.myapplication.ColorNumberFragment"
+        android:name="com.example.lego.myapplication.DashboardFragment2"
         android:label="fragment_color_number"
-        tools:layout="@layout/fragment_color_number" />
-    <fragment
-        android:id="@+id/notificationrFragment2"
-        android:name="com.example.lego.myapplication.ColorNumberFragment"
-        android:label="fragment_color_number"
-        tools:layout="@layout/fragment_color_number">
+        tools:layout="@layout/fragment">
+        <argument
+            android:name="tab"
+            android:defaultValue="1"
+            app:argType="integer" />
         <argument
             android:name="color"
-            android:defaultValue="#DD2600"
+            android:defaultValue="#6200EA"
             app:argType="string" />
         <argument
             android:name="amount"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/actionDashboardFragment2ToHomeFragment2"
+            app:destination="@id/homeFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/actionDashboardFragment2ToDashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/actionDashboardFragment2ToNotificationFragment2"
+            app:destination="@id/notificationFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationFragment2"
+        android:name="com.example.lego.myapplication.NotificationFragment2"
+        android:label="fragment_color_number"
+        tools:layout="@layout/fragment">
+        <action
+            android:id="@+id/actionNotificationFragment2ToHomeFragment2"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/actionNotificationFragment2ToDashboardFragment2"
+            app:destination="@id/dashboardFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/actionNotificationFragment2ToNotificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="color"
+            android:defaultValue="#FFD600"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            android:defaultValue="2"
+            app:argType="integer" />
+        <argument
+            android:name="tab"
             android:defaultValue="2"
             app:argType="integer" />
     </fragment>
